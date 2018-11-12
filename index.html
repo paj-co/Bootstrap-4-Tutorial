@@ -13,16 +13,39 @@
 
         <title>Hello, world!</title>
 
+        <style>
+            .row div{
+                padding: 20px 10px;
+                border: 1px solid;
+            }
+        </style>
+
     </head>
 
     <body>
-    <!--Responsive breakpoints: http://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints -->
-        <div class="container" style="background: skyblue;">
-            <h1>Fixed Container</h1>
-        </div>
 
-        <div class="container-fluid" style="background: yellow;">
-            <h1>Fluid Container</h1>
+        <div class="container">
+            <div class="row"  style="background: skyblue;">
+                <!-- Have to specify class: row (like table in HTML) and than class: col=column,sm=for small devices up, 6=take space
+                of 6 columns; there are devices: xs (extra small), sm (small), md (medium), lg (large), xl (extra large)
+                -->
+                <div class="col-md-6">col-md-6</div>
+                <div class="col-md-6">col-md-6</div>
+            </div>
+
+            <div class="row" style="background: pink;">
+                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+            </div>
+
+            <div class="row" style="background: yellow;">
+                <div class="col-3">col-3</div>
+                <div class="col-3">col-3</div>
+                <div class="col-3">col-3</div>
+                <div class="col-3">col-3</div>
+            </div>
         </div>
 
         <!-- Optional JavaScript -->
@@ -34,3 +57,4 @@
     </body>
 
 </html>
+
