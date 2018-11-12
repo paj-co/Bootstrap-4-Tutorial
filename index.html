@@ -13,24 +13,61 @@
 
         <title>Hello, world!</title>
 
-        <style>
-            div.container h1 medi{
-
-            }
-        </style>
-
     </head>
 
     <body>
 <!--Default jambotron has rounded corners, if wont not add class="jumbotron-fluid";
 class="container" is used for bringing text more to center-->
-            <div class="jumbotron jumbotron-fluid bg-info text-white" style="background: #aaa;">
-                <div class="container text-center">
-                    <h1 class="display-3">Welcome to the Paj-man solution</h1>
-                    <p class="lead">We will serve you with best answers we got!</p>
-                </div>
+        <div class="jumbotron jumbotron-fluid bg-info text-white" style="background: #aaa;">
+            <div class="container text-center">
+                <h1 class="display-3">Welcome to the Paj-man solution</h1>
+                <p class="lead">We will serve you with best answers we got!</p>
             </div>
+        </div>
+        <div class="container text-muted">
 
+            <!--cards-->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card"><!-- class="card" because of image, if it would be in card-body it would have padding
+                    to place image in the card we use classes: card-img-top and for right dimensions img-fluid -->
+                        <img src="./img/node.png" alt="Node.js Logo" class="card-img-top img-fluid"/>
+                        <div class="card-body"> <!--Gives us padding -->
+                            <h3 class="card-title">Node.js Training</h3> <!--Gives title distinction -->
+                            <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./img/mongo.png" alt="Mongo Logo" class="card-img-top img-fluid"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Mongo Training</h3>
+                            <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./img/react.png" alt="React Logo" class="card-img-top img-fluid"/>
+                        <div class="card-body">
+                            <h3 class="card-title">React Training</h3>
+                            <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./img/webpack.png" alt="Webpack Logo" class="card-img-top img-fluid"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Webpack Training</h3>
+                            <p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
