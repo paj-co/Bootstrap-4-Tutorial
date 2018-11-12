@@ -13,34 +13,18 @@
 
         <title>Hello, world!</title>
 
-        <style>
-            .row div{
-                padding: 20px 10px;
-                border: 1px solid;
-            }
-        </style>
-
     </head>
 
     <body>
-<!--https://getbootstrap.com/docs/4.1/layout/grid/ -->
-        <div class="container">
-            <div class="row"  style="background: skyblue;">
-                <!--If width is not specified Bootstrap will do it  for us: ex. under: 3 elements in thee row from medium
-                screen devices one 6 columns wide, and 2 other automatic width of 3 columns-->
-                <div class="col-md">col-md</div>
-                <div class="col-md-6">col-md-6</div>
-                <div class="col-md">col-md</div>
+<!--Default jambotron has rounded corners, if wont not add class="jumbotron-fluid";
+class="container" is used for bringing text more to center-->
+            <div class="jumbotron jumbotron-fluid" style="background: #aaa;">
+                <div class="container">
+                    <h1>Welcome to the Paj-man solution</h1>
+                    <p>We will serve you with best answers we got!</p>
+                </div>
             </div>
-            <!-- Justify content, from md screen size to center -->
-            <div class="row justify-content-md-center">
-                <!--To justify right: justify-content-md-end -->
-                <!--Changing the order of elements: order-first, order-last -->
-                <div class="col-md-2 order-last">1. col-md-2</div>
-                <div class="col-md-2 order-first">2. col-md-2</div>
-                <div class="col-md-2">3. col-md-2</div>
-            </div>
-        </div>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -51,4 +35,3 @@
     </body>
 
 </html>
-

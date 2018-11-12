@@ -16,7 +16,7 @@ Here is my tutorial progress:
 * [x] Bootstrap 4 Tutorial #4 - Containers
 * [x] Bootstrap 4 Tutorial #5 - Grid Basics
 * [x] Bootstrap 4 Tutorial #6 - Flex Grid
-* [ ] Bootstrap 4 Tutorial #7 - Jumbotrons
+* [x] Bootstrap 4 Tutorial #7 - Jumbotrons
 * [ ] Bootstrap 4 Tutorial #8 - Utilities and Typography
 * [ ] Bootstrap 4 Tutorial #9 - Cards
 * [ ] Bootstrap 4 Tutorial #10 - Bootstrap Navs
