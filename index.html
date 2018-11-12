@@ -23,28 +23,22 @@
     </head>
 
     <body>
-
+<!--https://getbootstrap.com/docs/4.1/layout/grid/ -->
         <div class="container">
             <div class="row"  style="background: skyblue;">
-                <!-- Have to specify class: row (like table in HTML) and than class: col=column,sm=for small devices up, 6=take space
-                of 6 columns; there are devices: xs (extra small), sm (small), md (medium), lg (large), xl (extra large)
-                -->
+                <!--If width is not specified Bootstrap will do it  for us: ex. under: 3 elements in thee row from medium
+                screen devices one 6 columns wide, and 2 other automatic width of 3 columns-->
+                <div class="col-md">col-md</div>
                 <div class="col-md-6">col-md-6</div>
-                <div class="col-md-6">col-md-6</div>
+                <div class="col-md">col-md</div>
             </div>
-
-            <div class="row" style="background: pink;">
-                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-                <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-            </div>
-
-            <div class="row" style="background: yellow;">
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
+            <!-- Justify content, from md screen size to center -->
+            <div class="row justify-content-md-center">
+                <!--To justify right: justify-content-md-end -->
+                <!--Changing the order of elements: order-first, order-last -->
+                <div class="col-md-2 order-last">1. col-md-2</div>
+                <div class="col-md-2 order-first">2. col-md-2</div>
+                <div class="col-md-2">3. col-md-2</div>
             </div>
         </div>
 
