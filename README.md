@@ -20,5 +20,5 @@ Here is my tutorial progress:
 * [x] Bootstrap 4 Tutorial #8 - Utilities and Typography
 * [x] Bootstrap 4 Tutorial #9 - Cards
 * [x] Bootstrap 4 Tutorial #10 - Bootstrap Navs
-* [ ] Bootstrap 4 Tutorial #11 - Responsive Navbars
+* [x] Bootstrap 4 Tutorial #11 - Responsive Navbars
 * [ ] Bootstrap 4 Tutorial #12 - Tooltips 

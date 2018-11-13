@@ -16,6 +16,34 @@
     </head>
 
     <body>
+        <!-- navbar class: information, that it is navbar;
+        navbar-expand-sm: it will collapse for small and extra small screens
+       There mast be some background: bg-info + navbar-dark (or light): can't see the button otherwise -->
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+            <div class="container">
+                <!-- Button, that hides content for smaller screens; data-toggle="collapse": for bootstrap the behaviour
+                to do; data-target="mainNav" what we want to collapse, what this button controls-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                    <!-- Icon for button -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--collapse: this will collapse, navbar-collapse: to associate it with a navbar, links are displayed
+                 under the button (without on the right site); id="mainNav" as a target for button-->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!--Nav within the navbar -->
+                    <div class="navbar-nav">
+                        <!--nav-item: styling the links, nav-link: link within navigation, active: different styling,
+                          -->
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#">Traning</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
 <!--Default jambotron has rounded corners, if wont not add class="jumbotron-fluid";
 class="container" is used for bringing text more to center-->
         <div class="jumbotron jumbotron-fluid bg-info text-white" style="background: #aaa;">
