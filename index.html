@@ -112,7 +112,10 @@ class="container" is used for bringing text more to center-->
             <!--tab-pane: it is a card for navigation with id; active: one that is displayed as default -->
             <div class="tab-pane active" id="ninja">
                 <h3>The Net Ninja</h3>
-                <p>DuckDuckGo search engine lover! DuckDuckGo search engine lover! DuckDuckGo search engine lover!
+                <!-- data-toggle="tooltip" will be found by our jQuery function at the bottom, title for text being shown
+                 and class="text-info" for distinction among normal text; data-placement="right, left, bottom"-->
+                <p><span data-toggle="tooltip" title="Privacy focus search engine" class="text-info" data-placement="right">
+                    DuckDuckGo</span> search engine lover! DuckDuckGo search engine lover! DuckDuckGo search engine lover!
                     DuckDuckGo search engine lover! DuckDuckGo search engine lover! DuckDuckGo search engine lover!
                     DuckDuckGo search engine lover! DuckDuckGo search engine lover! DuckDuckGo search engine lover!</p>
             </div>
@@ -143,6 +146,16 @@ class="container" is used for bringing text more to center-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--CSS only tooltip: https://www.youtube.com/watch?v=M4lQwiUvGlY -->
+        <script>
+            //*It must be here because  of jQuery and Popper.js,
+            //* We have document load function, which is going to fire when the document loads, than we targets any element
+            //*with a data toggle to be equal to tooltip, than we use tooltip() method so it enables this tooltips
+            //*on the page - thats the only JS we need to do, all other stuff is handles by Bootstrap
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 
     </body>
 
